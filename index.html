@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BrightRides - Second-Hand Car Marketplace</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <img id="logo" src="logo.png" alt="BrightRides Logo">
+    </header>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search for cars...">
+        <button type="button">Search</button>
+    </section>
+
+    <section class="car-listings">
+        <!-- Car listings will be generated here -->
+    </section>
+
+    <form id="add-car-form">
+        <label for="make">Make:</label>
+        <input type="text" id="make" required><br>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" required><br>
+
+        <label for="year">Year:</label>
+        <input type="text" id="year" required><br>
+
+        <label for="mileage">Mileage:</label>
+        <input type="text" id="mileage" required><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" required><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required><br>
+
+        <!-- Input field for car image -->
+        <label for="carImage">Car Image:</label>
+        <input type="file" id="carImage" accept="image/*" required><br>
+
+        <!-- Input field for phone number -->
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" required><br>
+
+        <button type="submit">Add Car</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
